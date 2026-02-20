@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Startup Dashboard</title>
+  <link rel="stylesheet" href="../assets/css/styles.css"/>
+</head>
+<body>
+  <section class="dashboard-wrapper">
+    <div class="dashboard-card">
+      <div class="dash-top">
+        <div>
+          <h2 class="dash-title">Startup Home</h2>
+          <p id="status" class="dash-sub">Loading...</p>
+        </div>
+        <button id="logout" class="btn logout-btn">Logout</button>
+      </div>
+
+      <div class="profile-box">
+        <img id="avatar" alt="avatar" />
+        <div class="profile-meta">
+          <div id="name" class="name">—</div>
+          <div id="email" class="email">—</div>
+          <div id="role" class="provider">—</div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dash-panel">
+          <h3>Startup tools</h3>
+          <p>Create your startup profile, upload pitch deck, and track investor interest.</p>
+          <div class="actions">
+            <a class="action" href="#">Create Profile</a>
+            <a class="action" href="#">Upload Pitch</a>
+            <a class="action" href="#">Investor Leads</a>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <h3>Post an Idea</h3>
+<input id="ideaTitle" placeholder="Idea title" />
+<textarea id="ideaBody" class="notes" placeholder="Describe your idea..."></textarea>
+<button id="postIdea" class="btn">Publish</button>
+<div id="myPosts"></div>
+          <div class="info">
+            <div class="info-row"><span>Role</span><b>STARTUP</b></div>
+            <div class="info-row"><span>Status</span><b>Active</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast"></div>
+  <script type="module" src="../js/startup-page.js"></script>
+</body>
+</html>

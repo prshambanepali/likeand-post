@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../assets/css/styles.css"/>
+</head>
+<body>
+
+  <section class="dashboard-wrapper">
+    <div class="dashboard-card">
+      <div class="dash-top">
+        <div>
+          <h2 class="dash-title">Dashboard</h2>
+          <p id="status" class="dash-sub">Loading your profile...</p>
+        </div>
+
+        <button id="logout" class="btn logout-btn">Logout</button>
+      </div>
+
+      <div class="profile-box">
+        <img id="avatar" alt="avatar" />
+        <div class="profile-meta">
+          <div id="name" class="name">—</div>
+          <div id="email" class="email">—</div>
+          <div id="provider" class="provider">—</div>
+          <div id="role" class="provider">—</div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dash-panel">
+          <h3>Welcome to your workspace 🚀</h3>
+          <p>
+            You can add role-specific features here: investor tools, startup tools,
+            internship seeker tools, influencer tools.
+          </p>
+        </div>
+
+        <div class="dash-panel">
+          <h3>Quick Actions</h3>
+          <div class="actions">
+            <a class="action" href="../index.html">Go to Login</a>
+            <a class="action" href="./sign-up.html">Create Another Account</a>
+            <a class="action" href="#" id="refreshBtn">Refresh Profile</a>
+            <a class="action" href="./admin.html" id="adminLink" style="display:none;">Open Admin Panel</a>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <h3>Account Info</h3>
+          <div class="info">
+            <div class="info-row"><span>User ID</span><b id="uid">—</b></div>
+            <div class="info-row"><span>Provider</span><b id="prov2">—</b></div>
+            <div class="info-row"><span>Role</span><b id="role2">—</b></div>
+            <div class="info-row"><span>Status</span><b id="stat2">Active</b></div>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <h3>Notes</h3>
+          <textarea class="notes" placeholder="Write notes here..."></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="../js/dashboard.js"></script>
+</body>
+</html>

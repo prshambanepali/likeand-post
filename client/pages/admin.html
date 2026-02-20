@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="../assets/css/styles.css"/>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="badge">🛠 Admin Control Panel</div>
+      <h1>Manage users.<br/>Roles & Access.</h1>
+      <p>Only ADMIN can view this page.</p>
+
+      <div class="grid">
+        <div class="tile"><b>Change Roles</b><span>Assign INVESTOR / STARTUP / INTERN_SEEKER / INFLUENCER / ADMIN</span></div>
+        <div class="tile"><b>Disable Accounts</b><span>Block access instantly for safety</span></div>
+        <div class="tile"><b>Audit</b><span>See latest users</span></div>
+        <div class="tile"><b>RBAC</b><span>Backend-enforced access</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Users</h2>
+      <p class="small">Tip: Update role, then Save. Use Disable/Enable to control access.</p>
+
+      <div id="tableWrap"></div>
+
+      <div class="row" style="margin-top:12px;">
+        <a class="btn secondary" href="./dashboard.html" style="text-decoration:none; display:flex; align-items:center; justify-content:center;">Back to Dashboard</a>
+        <button id="logoutBtn" class="btn danger" style="width:100%;">Logout</button>
+      </div>
+
+      <div id="toast" class="toast"></div>
+    </section>
+  </div>
+
+  <script type="module" src="../js/admin.js"></script>
+</body>
+</html>
